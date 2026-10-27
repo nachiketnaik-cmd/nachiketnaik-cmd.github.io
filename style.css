@@ -52,7 +52,8 @@ nav a:first-child {
   margin-left: 0;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   text-decoration: underline;
 }
 
@@ -129,6 +130,41 @@ h3 {
   margin-bottom: 6px;
 }
 
+/* Blog list */
+.post-list {
+  list-style: none;
+}
+
+.post-list li {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.date {
+  color: #777777;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  min-width: 100px;
+}
+
+/* Blog post */
+.post {
+  padding: 56px 0;
+}
+
+.post h1 {
+  margin-bottom: 32px;
+}
+
+.post h2 {
+  margin: 36px 0 12px;
+}
+
+.post p {
+  margin-bottom: 18px;
+}
+
 /* Footer */
 footer {
   padding: 32px 0 48px;
@@ -144,5 +180,10 @@ footer {
 
   nav a {
     margin-left: 14px;
+  }
+
+  .post-list li {
+    flex-direction: column;
+    gap: 0;
   }
 }
