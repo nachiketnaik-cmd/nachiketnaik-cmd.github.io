@@ -10,13 +10,18 @@
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">Nachiket Naik</a>
-    <nav>
-      <a href="index.html#experience">Experience</a>
-      <a href="index.html#work">Work</a>
-      <a href="equity-research.html">Equity Research</a>
-      <a href="research.html">Research Papers</a>
-      <a href="writing.html">Writing</a>
-      <a href="index.html#contact">Contact</a>
+    <nav class="menu">
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="menu-links" id="menu-links">
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#work">Work</a>
+        <a href="equity-research.html">Equity Research</a>
+        <a href="research.html">Research Papers</a>
+        <a href="writing.html">Writing</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
     </nav>
   </header>
 
@@ -87,7 +92,7 @@
 
       <article class="project">
         <div class="project-head">
-          <h3>Excel CRM for a Founder's Office</h3>
+          <h3><a href="https://docs.google.com/spreadsheets/d/1djXH0H6pNZsDVqgVuht3K2jzTagbwj2F/edit?usp=sharing">Excel CRM for a Founder's Office</a></h3>
           <span class="year">2026</span>
         </div>
         <p>
@@ -102,7 +107,7 @@
       <article class="project">
         <div class="project-head">
           <h3><a href="https://github.com/nachiketnaik-cmd/Psychometric-Risk-Profiler-and-Portfolio-Optimizer">Psychometric Risk Profiler &amp; Portfolio Optimizer</a></h3>
-          <span class="year">2026</span>
+          <span class="year">2025</span>
         </div>
         <p>
           Asks 5 questions to profile your risk appetite, then builds an optimal Markowitz
@@ -136,5 +141,6 @@
   <footer>
     <p>&copy; 2026 Nachiket Naik</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
