@@ -166,6 +166,13 @@ h3 {
   font-size: 0.9rem;
 }
 
+.project-img {
+  display: block;
+  width: 100%;
+  margin: 8px 0 12px;
+  border: 1px solid #e5e5e5;
+}
+
 /* Contact */
 .links {
   list-style: none;
