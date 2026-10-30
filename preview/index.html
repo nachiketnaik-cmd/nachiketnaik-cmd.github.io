@@ -8,7 +8,7 @@
   <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Caveat:wght@500&display=swap">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -22,6 +22,7 @@
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="nav">
+        <a href="#journey">Journey</a>
         <a href="#experience">Experience</a>
         <a href="#work">Work</a>
         <a href="#research">Research</a>
@@ -36,40 +37,33 @@
     <section class="hero" id="top">
       <div class="wrap hero-grid">
         <div class="hero-text">
-          <p class="eyebrow">Finance · Research · Automation</p>
-          <h1>Nachiket<br>Naik<span class="dot">.</span></h1>
-          <p class="lede">I build tools, run the numbers and write things down.</p>
+          <p class="eyebrow">Finance · Research · Automation · Writing</p>
+          <h1>Nachiket<br>Naik<span class="dot"></span></h1>
+          <p class="lede">I build tools.<br>I run the numbers.</p>
           <p class="intro">
-            I like solving messy business problems with simple systems: a spreadsheet that replaces
-            a dozen scattered notes, or a pipeline that nearly halves the time a research report takes.
+            Solving messy business problems with simple systems, from spreadsheets
+            to AI research pipelines.
           </p>
           <div class="buttons">
             <a class="btn btn-dark" href="https://www.linkedin.com/in/-nachiketnaik/">LinkedIn</a>
             <a class="btn" href="https://drive.google.com/file/d/1lpY8gLjxiE8MY2KQg7VX3oqKlX9Xgd91/view?usp=sharing">Resume</a>
             <a class="btn" href="mailto:nachiketnaik2004@gmail.com">Email</a>
           </div>
+          <a class="scroll-note" href="#journey">Scroll to see the work</a>
         </div>
 
-        <aside class="hero-card">
-          <p class="label">At a glance</p>
-          <ul>
-            <li><strong>BITS Pilani, Goa</strong><span>ECE, Minor in Finance</span></li>
-            <li><strong>CFA Level I</strong><span>Cleared</span></li>
-            <li><strong>Published researcher</strong><span>Indian banking valuation</span></li>
-            <li><strong>Builds with AI</strong><span>Claude pipelines &amp; tools</span></li>
-          </ul>
-        </aside>
+        <div class="hero-visual" aria-hidden="true">
+          <span class="shape shape-arch"></span>
+          <span class="shape shape-circle"></span>
+          <span class="shape shape-quarter"></span>
+          <div class="photo">
+            <!-- Replace this placeholder with: <img src="../images/me.jpg" alt=""> -->
+            <span>Your photo here</span>
+          </div>
+          <p class="handnote">Numbers.<br>Systems.<br>Stories.</p>
+        </div>
       </div>
-      <a class="scroll-cue" href="#experience" aria-label="Scroll to experience"><span></span></a>
     </section>
-
-    <!-- Marquee -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>BITS Pilani, Goa</span><span>ValueAdd Research &amp; Analytics</span><span>Buoyant Capital</span><span>CFA Level I</span><span>Peer-reviewed research</span><span>Claude automation</span>
-        <span>BITS Pilani, Goa</span><span>ValueAdd Research &amp; Analytics</span><span>Buoyant Capital</span><span>CFA Level I</span><span>Peer-reviewed research</span><span>Claude automation</span>
-      </div>
-    </div>
 
     <!-- Stats -->
     <section class="wrap stats">
@@ -79,10 +73,53 @@
       <div class="stat reveal"><strong>20</strong><span>banks &amp; NBFCs in my risk-scoring framework</span></div>
     </section>
 
-    <!-- 01 Experience -->
-    <section class="wrap section" id="experience">
+    <!-- 01 Journey -->
+    <section class="wrap section" id="journey">
       <div class="section-head reveal">
         <span class="num">01</span>
+        <h2>The journey so far</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="t-year">2020</span>
+          <div class="t-body"><h3>Class X</h3><p>Completed secondary school.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2022</span>
+          <div class="t-body"><h3>Class XII</h3><p>Completed higher secondary.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2022</span>
+          <div class="t-body"><h3>BITS Pilani, Goa Campus</h3><p>Started Electronics &amp; Communication Engineering, and added a Minor in Finance.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2024</span>
+          <div class="t-body"><h3>First valuation work</h3><p>Built DCF models for three Indian stock brokerages.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2025</span>
+          <div class="t-body"><h3>Research in R, then Buoyant Capital</h3><p>Modelled volatility spillovers across Indian sectoral indices with a TVP-VAR, then joined Buoyant Capital as an equity research intern under the senior banking analyst.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">20XX</span>
+          <div class="t-body"><h3>CFA</h3><p>Add the year and a one-line note here.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2026</span>
+          <div class="t-body"><h3>Stealth startup, then ValueAdd</h3><p>Founder's office internship at a stealth startup, then fixed income research at ValueAdd, where I built a Claude pipeline that cut report turnaround by about 42%.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2026</span>
+          <div class="t-body"><h3>First paper published</h3><p>A peer-reviewed paper on valuation in Indian banking. The next one, on LLM trading agents, is in progress.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 02 Experience -->
+    <section class="wrap section" id="experience">
+      <div class="section-head reveal">
+        <span class="num">02</span>
         <h2>Professional experience</h2>
       </div>
 
@@ -109,7 +146,7 @@
           <span class="dates">Jul 2026</span>
         </div>
         <div class="chapter-body">
-          <h3>Crest Capital</h3>
+          <h3>Stealth startup</h3>
           <p class="role">Founder's Office Intern</p>
           <p>
             Ran outreach for an event the founder was hosting. The founder's most valuable network
@@ -144,10 +181,10 @@
       </article>
     </section>
 
-    <!-- 02 Work -->
+    <!-- 03 Work -->
     <section class="wrap section" id="work">
       <div class="section-head reveal">
-        <span class="num">02</span>
+        <span class="num">03</span>
         <h2>Tools &amp; automation</h2>
       </div>
 
@@ -200,10 +237,10 @@
       </div>
     </section>
 
-    <!-- 03 Research -->
+    <!-- 04 Research -->
     <section class="wrap section" id="research">
       <div class="section-head reveal">
-        <span class="num">03</span>
+        <span class="num">04</span>
         <h2>Research</h2>
       </div>
 
@@ -232,10 +269,10 @@
       <p class="more reveal"><a href="../research.html">All research papers →</a> <a href="../equity-research.html">Equity research →</a></p>
     </section>
 
-    <!-- 04 Writing -->
+    <!-- 05 Writing -->
     <section class="wrap section" id="writing">
       <div class="section-head reveal">
-        <span class="num">04</span>
+        <span class="num">05</span>
         <h2>Beyond the spreadsheet</h2>
       </div>
 
@@ -258,10 +295,10 @@
       </div>
     </section>
 
-    <!-- 05 Contact -->
+    <!-- 06 Contact -->
     <section class="wrap section contact" id="contact">
       <div class="section-head reveal">
-        <span class="num">05</span>
+        <span class="num">06</span>
         <h2>What's next</h2>
       </div>
       <p class="big reveal">Looking for my next role in finance, research or a founder's team. Let's talk.</p>
