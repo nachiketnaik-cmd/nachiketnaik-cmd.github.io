@@ -20,6 +20,26 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeMenu();
 });
 
+// Timeline line fills in as you scroll past it
+const timeline = document.querySelector(".timeline");
+const steps = timeline ? timeline.querySelectorAll("li") : [];
+
+function updateTimeline() {
+  const mark = window.innerHeight * 0.6;
+  const rect = timeline.getBoundingClientRect();
+  const progress = Math.min(Math.max((mark - rect.top) / rect.height, 0), 1);
+  timeline.style.setProperty("--progress", progress);
+  steps.forEach((li) => {
+    li.classList.toggle("passed", li.getBoundingClientRect().top + 28 < mark);
+  });
+}
+
+if (timeline) {
+  window.addEventListener("scroll", updateTimeline, { passive: true });
+  window.addEventListener("resize", updateTimeline);
+  updateTimeline();
+}
+
 // Fade sections in as they scroll into view
 const items = document.querySelectorAll(".reveal");
 

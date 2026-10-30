@@ -157,13 +157,6 @@ h1 {
   letter-spacing: -0.04em;
   margin: 0 0 40px;
 }
-h1 .dot {
-  display: inline-block;
-  width: 0.14em;
-  height: 0.14em;
-  margin-left: 0.06em;
-  background: var(--accent);
-}
 
 .lede {
   font-family: var(--display);
@@ -301,6 +294,16 @@ h1 .dot {
   width: 1px;
   background: var(--line);
 }
+.timeline::after {
+  content: "";
+  position: absolute;
+  left: 115.5px;
+  top: 8px;
+  width: 2px;
+  height: calc((100% - 16px) * var(--progress, 0));
+  background: var(--accent);
+}
+.timeline li.passed::before { background: var(--accent); }
 .timeline li {
   position: relative;
   display: grid;
@@ -311,6 +314,7 @@ h1 .dot {
 .timeline li::before {
   content: "";
   position: absolute;
+  z-index: 1;
   left: 110px;
   top: 28px;
   width: 9px;
@@ -566,6 +570,7 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
   .scroll-note { display: none; }
   .handnote { font-size: 1.1rem; right: 0; }
   .timeline::before { left: 64px; }
+  .timeline::after { left: 63.5px; }
   .timeline li { grid-template-columns: 48px 1fr; gap: 36px; }
   .timeline li::before { left: 58px; top: 25px; }
   .t-year { font-size: 1.05rem; }
