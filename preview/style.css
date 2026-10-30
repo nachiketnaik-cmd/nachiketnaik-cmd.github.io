@@ -190,18 +190,6 @@ h1 {
 .btn-dark { background: var(--ink); color: var(--bg); }
 .btn-dark:hover { background: var(--accent); border-color: var(--accent); }
 
-.scroll-note {
-  display: inline-block;
-  margin-top: 48px;
-  padding-left: 14px;
-  border-left: 1.5px solid var(--ink);
-  font-size: 0.72rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-decoration: none;
-}
-
 /* Photo with shapes behind it */
 
 .hero-visual {
@@ -437,6 +425,15 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
   gap: 20px;
   align-items: start;
 }
+.cards-masonry {
+  display: block;
+  columns: 2;
+  column-gap: 20px;
+}
+.cards-masonry .card {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
 .cards-3 { grid-template-columns: repeat(3, 1fr); }
 
 .card {
@@ -567,7 +564,6 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
   .nav .nav-cta:hover { background: none; color: var(--accent); }
 
   .hero { padding: 48px 0 64px; }
-  .scroll-note { display: none; }
   .handnote { font-size: 1.1rem; right: 0; }
   .timeline::before { left: 64px; }
   .timeline::after { left: 63.5px; }
@@ -580,6 +576,7 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
   .chapter { grid-template-columns: 1fr; gap: 8px; }
   .chapter-meta { flex-direction: row; justify-content: space-between; }
   .cards { grid-template-columns: 1fr; }
+  .cards-masonry { columns: 1; }
   .card { padding: 22px; }
   .row { grid-template-columns: 1fr; gap: 4px; }
   .row-date { text-align: left; }
