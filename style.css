@@ -15,7 +15,7 @@
   --peach-strong: #f8d3c8;
   --sage-strong: #dbe9d8;
   --display: "Manrope", "Inter", sans-serif;
-  --serif: "Fraunces", "Times New Roman", serif;
+  --serif: "Manrope", "Inter", sans-serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
@@ -339,6 +339,8 @@ h1 {
 .stat strong {
   display: block;
   font-family: var(--serif);
+  font-weight: 800;
+  letter-spacing: -0.03em;
   font-size: clamp(2.4rem, 5vw, 3.4rem);
   line-height: 1;
   margin-bottom: 10px;
@@ -364,16 +366,16 @@ h1 {
 }
 h2 {
   font-family: var(--serif);
-  font-weight: 600;
+  font-weight: 700;
   font-size: clamp(2rem, 4.5vw, 3rem);
   line-height: 1.05;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   margin: 0;
 }
 
 h3 {
   font-family: var(--serif);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.45rem;
   line-height: 1.25;
   margin: 0 0 6px;
@@ -482,7 +484,7 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
   text-transform: uppercase;
   color: var(--accent);
 }
-.row-title { font-family: var(--serif); font-size: 1.2rem; line-height: 1.35; }
+.row-title { font-family: var(--serif); font-weight: 600; font-size: 1.2rem; line-height: 1.35; }
 .row-date { color: var(--muted); text-align: right; font-size: 0.95rem; }
 
 .more { margin-top: 24px; display: flex; gap: 24px; flex-wrap: wrap; }
@@ -492,6 +494,8 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
 
 .big {
   font-family: var(--serif);
+  font-weight: 600;
+  letter-spacing: -0.02em;
   font-size: clamp(1.6rem, 4vw, 2.6rem);
   line-height: 1.2;
   max-width: 820px;
