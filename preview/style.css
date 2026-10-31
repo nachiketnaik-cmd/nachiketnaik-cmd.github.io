@@ -516,6 +516,40 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
 .footer a { text-decoration: none; }
 .footer a:hover { color: var(--ink); }
 
+
+/* Inner pages */
+
+.nav a.active { color: var(--ink); font-weight: 600; }
+
+.page-hero {
+  background: #fff;
+  padding: 80px 0 64px;
+  border-bottom: 1px solid var(--line);
+}
+.page-hero .eyebrow { color: var(--muted); letter-spacing: 0.22em; margin-bottom: 20px; }
+.page-hero h1 { font-size: clamp(3rem, 8vw, 6rem); margin-bottom: 20px; }
+.page-hero .lede { color: var(--muted); font-weight: 500; margin: 0; }
+
+.page-hero + .section { padding-top: 64px; }
+
+.post-list { list-style: none; margin: 18px 0 0; padding: 0; }
+.post-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.post-list a { font-family: var(--serif); font-weight: 600; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.post-list .date { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+
+.post { max-width: 720px; padding-top: 72px; }
+.post h1 { font-size: clamp(2.6rem, 7vw, 4.5rem); margin-bottom: 32px; }
+.post h2 { font-size: 1.7rem; margin: 40px 0 12px; }
+.post p { font-size: 1.08rem; }
+.post .back { margin-top: 48px; }
+.post .back a { text-decoration-color: var(--accent); text-underline-offset: 4px; }
+
 /* Motion */
 
 .js .reveal {
@@ -581,5 +615,7 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
   .row { grid-template-columns: 1fr; gap: 4px; }
   .row-date { text-align: left; }
   .row:hover { padding-left: 0; }
+  .page-hero { padding: 48px 0 40px; }
+  .post { padding-top: 48px; }
   .footer { flex-direction: column; align-items: flex-start; margin-top: 80px; }
 }
