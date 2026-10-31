@@ -4,182 +4,316 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nachiket Naik</title>
-  <meta name="description" content="Personal portfolio of Nachiket Naik: tools, automation, research and writing.">
+  <meta name="description" content="Nachiket Naik: finance, research and automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Caveat:wght@500&display=swap">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <a class="logo" href="index.html">Nachiket Naik</a>
-    <nav class="menu">
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu-links">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">NACHIKET NAIK</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
-      <div class="menu-links" id="menu-links">
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#work">Work</a>
-        <a href="equity-research.html">Equity Research</a>
-        <a href="research.html">Research Papers</a>
-        <a href="writing.html">Writing</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
-    </nav>
+      <nav class="nav" id="nav">
+        <a href="#journey">Journey</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <h1>Nachiket Naik</h1>
-      <p class="tagline">I build tools, run the numbers and write things down.</p>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Finance · Research · Automation · Writing</p>
+          <h1>Nachiket<br>Naik</h1>
+          <p class="lede">I build tools.<br>I run the numbers.</p>
+          <p class="intro">
+            Solving messy business problems with simple systems, from spreadsheets
+            to AI research pipelines.
+          </p>
+        </div>
+
+        <div class="hero-visual">
+          <span class="shape shape-arch"></span>
+          <span class="shape shape-circle"></span>
+          <span class="shape shape-quarter"></span>
+          <div class="photo">
+            <img src="images/me.jpg" alt="Portrait of Nachiket Naik">
+          </div>
+          <p class="handnote">Numbers.<br>Systems.<br>Stories.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <!-- Edit this paragraph to describe yourself -->
-      <p>
-        I studied Electronics &amp; Communication Engineering with a Minor in Finance at BITS Pilani,
-        Goa Campus, and cleared CFA Level I along the way. I like solving messy business problems
-        with simple systems: a spreadsheet that replaces a dozen scattered notes, or a pipeline that
-        nearly halves the time a research report takes.
-      </p>
+    <!-- Stats -->
+    <section class="wrap stats">
+      <div class="stat reveal"><strong>42%</strong><span>faster credit research reports</span></div>
+      <div class="stat reveal"><strong>300+</strong><span>business cards digitised into a contact database</span></div>
+      <div class="stat reveal"><strong>~80</strong><span>attendees at an event I ran outreach for</span></div>
+      <div class="stat reveal"><strong>20</strong><span>banks &amp; NBFCs in my risk-scoring framework</span></div>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
+    <!-- 01 Journey -->
+    <section class="wrap section" id="journey">
+      <div class="section-head reveal">
+        <span class="num">01</span>
+        <h2>The journey so far</h2>
+      </div>
 
-      <article class="project">
-        <div class="project-head">
-          <h3>Fixed Income Research Intern, ValueAdd Research and Analytics</h3>
-          <span class="year">Aug – Sep 2026</span>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="t-year">2020</span>
+          <div class="t-body"><h3>Class X</h3><p>95.5%, with full marks in History and Geography.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2022</span>
+          <div class="t-body"><h3>Class XII</h3><p>92%.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2022</span>
+          <div class="t-body"><h3>BITS Pilani, Goa Campus</h3><p>Started Electronics &amp; Communication Engineering, and added a Minor in Finance.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2024</span>
+          <div class="t-body"><h3>First valuation work</h3><p>Built DCF models for three Indian stock brokerages.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2025</span>
+          <div class="t-body"><h3>Cleared CFA Level I</h3></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2025</span>
+          <div class="t-body"><h3>Buoyant Capital</h3><p>Equity research intern under the senior banking analyst.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2026</span>
+          <div class="t-body"><h3>Stealth startup</h3><p>Founder's office intern.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2026</span>
+          <div class="t-body"><h3>ValueAdd Research and Analytics</h3><p>Fixed income research intern. Built a Claude pipeline that cut report turnaround by about 42%.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="t-year">2026</span>
+          <div class="t-body"><h3>First paper published</h3><p>A peer-reviewed paper on valuation in Indian banking. The next one, on LLM trading agents, is in progress.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 02 Experience -->
+    <section class="wrap section" id="experience">
+      <div class="section-head reveal">
+        <span class="num">02</span>
+        <h2>Professional experience</h2>
+      </div>
+
+      <article class="chapter reveal">
+        <div class="chapter-meta">
+          <span class="chapter-no">Chapter 03</span>
+          <span class="dates">Aug – Sep 2026</span>
         </div>
-        <p>
-          Built a Claude-based pipeline that drafts credit initiation reports, cutting turnaround
-          by about 42%, from 6 days to 3.5 per issuer. Built three-statement models and mapped capital structures
-          and covenants to assess issuer default risk.
-        </p>
+        <div class="chapter-body">
+          <h3>ValueAdd Research and Analytics</h3>
+          <p class="role">Fixed Income Research Intern</p>
+          <p>
+            Built a Claude-based pipeline that drafts credit initiation reports, cutting turnaround
+            by about 42%, from 6 days to 3.5 per issuer. Built three-statement models and mapped
+            capital structures and covenants to assess issuer default risk.
+          </p>
+          <p class="tags"><span>Credit research</span><span>Financial modelling</span><span>Claude</span></p>
+        </div>
       </article>
 
-      <article class="project">
-        <div class="project-head">
-          <h3>Founder's Office Intern, Crest Capital</h3>
-          <span class="year">Jul 2026</span>
+      <article class="chapter reveal">
+        <div class="chapter-meta">
+          <span class="chapter-no">Chapter 02</span>
+          <span class="dates">Jul 2026</span>
         </div>
-        <p>
-          Ran outreach for an event the founder was hosting. The founder's most valuable network
-          sat in a stack of business cards collected at conferences over the years, so I turned it
-          into a usable contact database: digitised 300+ cards with Gemini OCR, then verified each
-          record by hand so the list could be trusted. That database became the backbone of the
-          event's outreach: over two weeks I sent personalised messages on the founder's behalf,
-          with context from the founder, to 15&ndash;20 people a day, roughly 200 in all. About 80
-          people attended the event. I also built the <a href="#work">Excel CRM</a> that tracked every lead and follow-up, and
-          helped design the event poster.
-        </p>
+        <div class="chapter-body">
+          <h3>Stealth startup</h3>
+          <p class="role">Founder's Office Intern</p>
+          <p>
+            Ran outreach for an event the founder was hosting. The founder's most valuable network
+            sat in a stack of business cards collected at conferences over the years, so I turned it
+            into a usable contact database: digitised 300+ cards with Gemini OCR, then verified each
+            record by hand so the list could be trusted. That database became the backbone of the
+            event's outreach: over two weeks I sent personalised messages on the founder's behalf,
+            with context from the founder, to 15&ndash;20 people a day, roughly 200 in all. About 80
+            people attended the event. I also built the <a href="#work">Excel CRM</a> that tracked
+            every lead and follow-up, and helped design the event poster.
+          </p>
+          <p class="tags"><span>Outreach</span><span>Operations</span><span>CRM</span></p>
+        </div>
       </article>
 
-      <article class="project">
-        <div class="project-head">
-          <h3>Equity Research Intern, Buoyant Capital</h3>
-          <span class="year">Jul – Dec 2025</span>
+      <article class="chapter reveal">
+        <div class="chapter-meta">
+          <span class="chapter-no">Chapter 01</span>
+          <span class="dates">Jul – Dec 2025</span>
         </div>
-        <p>
-          Worked directly under the senior banking analyst, who taught me how banks actually work:
-          deposits, loans, net interest margins and asset quality. He later took me through NBFCs
-          and real estate developers as well. I put this to use in a risk-scoring framework across
-          20 banking and NBFC names and in buy/sell notes delivered to the trading desk.
-        </p>
+        <div class="chapter-body">
+          <h3>Buoyant Capital</h3>
+          <p class="role">Equity Research Intern</p>
+          <p>
+            Worked directly under the senior banking analyst, who taught me how banks actually work:
+            deposits, loans, net interest margins and asset quality. He later took me through NBFCs
+            and real estate developers as well. I put this to use in a risk-scoring framework across
+            20 banking and NBFC names and in buy/sell notes delivered to the trading desk.
+          </p>
+          <p class="tags"><span>Banking</span><span>NBFCs</span><span>Equity research</span></p>
+        </div>
       </article>
     </section>
 
-    <section id="work">
-      <h2>Tools &amp; Automation</h2>
+    <!-- 03 Work -->
+    <section class="wrap section" id="work">
+      <div class="section-head reveal">
+        <span class="num">03</span>
+        <h2>Tools &amp; automation</h2>
+      </div>
 
-      <!--
-        To add a new project, copy one <article class="project"> ... </article> block
-        below, paste it, and change the title, year, description, tags and link.
-      -->
-
-      <article class="project">
-        <div class="project-head">
+      <div class="cards cards-masonry">
+        <article class="card tint-cream reveal">
+          <p class="label">AI automation</p>
+          <img src="images/pipeline.png" alt="Flow of the pipeline: filings, data extraction, human check, section drafting, compile, AI fund manager and mentor review, fixes, final report, with a learnings log feeding each step" loading="lazy">
           <h3><a href="https://github.com/nachiketnaik-cmd/Credit-Research-pipeline">Automated Claude Research Pipeline</a></h3>
-          <span class="year">2026</span>
-        </div>
-        <img class="project-img" src="images/pipeline.png" alt="Flow of the pipeline: filings, data extraction, human check, section drafting, compile, AI fund manager and mentor review, fixes, final report, with a learnings log feeding each step" loading="lazy">
-        <p>
-          Built during my fixed income internship. It extracts data from annual and quarterly filings
-          and drafts credit initiation reports, with an analyst reviewing every step. Turnaround dropped
-          by about 42%, from 6 days to 3.5 per issuer.
-        </p>
-        <p class="tags">Claude · Automation · Credit research</p>
-      </article>
+          <p>
+            Built during my fixed income internship. It extracts data from annual and quarterly
+            filings and drafts credit initiation reports, with an analyst reviewing every step.
+            Turnaround dropped by about 42%, from 6 days to 3.5 per issuer.
+          </p>
+          <p class="tags"><span>Claude</span><span>Automation</span><span>Credit research</span></p>
+        </article>
 
-      <article class="project">
-        <div class="project-head">
+        <article class="card tint-sage reveal">
+          <p class="label">Sales operations</p>
           <h3><a href="https://docs.google.com/spreadsheets/d/1djXH0H6pNZsDVqgVuht3K2jzTagbwj2F/edit?usp=sharing">Excel CRM for a Founder's Office</a></h3>
-          <span class="year">2026</span>
-        </div>
-        <p>
-          A lightweight lead tracker built in Excel for a founder's office. Pick a date on the
-          dashboard and that day's pending follow-ups appear. Mark a task done in the main tracker
-          and it clears from the list. For leads that go cold, an analysis sheet shows why they
-          were lost.
-        </p>
-        <p class="tags">Excel · Sales operations · Lead tracking</p>
-      </article>
+          <p>
+            A lightweight lead tracker built in Excel. Pick a date on the dashboard and that day's
+            pending follow-ups appear. Mark a task done in the main tracker and it clears from the
+            list. For leads that go cold, an analysis sheet shows why they were lost.
+          </p>
+          <p class="tags"><span>Excel</span><span>Lead tracking</span></p>
+        </article>
 
-      <article class="project">
-        <div class="project-head">
+        <article class="card tint-lavender reveal">
+          <p class="label">Web</p>
+          <img src="images/website-new.png" alt="Screenshot of the home page of this website" loading="lazy">
           <h3><a href="https://github.com/nachiketnaik-cmd/nachiketnaik-cmd.github.io">This Website</a></h3>
-          <span class="year">2026</span>
-        </div>
-        <img class="project-img" src="images/website.png" alt="Screenshot of the home page of this website" loading="lazy">
-        <p>
-          A fully functional personal website, the one you are reading now, vibe coded with Claude.
-          It is plain HTML, CSS and JavaScript with no frameworks or templates, so it loads fast and
-          is easy to change. I directed the design, content and structure, and Claude wrote the
-          code. It runs across multiple pages, works on phones as well as laptops, and
-          has a dropdown menu that also works from the keyboard. Every change is tracked in Git and
-          published free on GitHub Pages. It is an evolving project: I keep adding to it as my work
-          grows.
-        </p>
-        <p class="tags">HTML · CSS · JavaScript · GitHub Pages</p>
-      </article>
+          <p>
+            A fully functional personal website, vibe coded with Claude. Plain HTML, CSS and
+            JavaScript with no frameworks, so it loads fast and is easy to change. I directed the
+            design, content and structure, and Claude wrote the code. Tracked in Git, published
+            free on GitHub Pages, and always evolving.
+          </p>
+          <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+        </article>
 
-      <article class="project">
-        <div class="project-head">
+        <article class="card tint-peach reveal">
+          <p class="label">Portfolio theory</p>
           <h3><a href="https://github.com/nachiketnaik-cmd/Psychometric-Risk-Profiler-and-Portfolio-Optimizer">Psychometric Risk Profiler &amp; Portfolio Optimizer</a></h3>
-          <span class="year">2025</span>
-        </div>
-        <p>
-          Asks 5 questions to profile your risk appetite, then builds an optimal Markowitz
-          portfolio of Indian equities and plots the full efficient frontier.
-        </p>
-        <p class="tags">Python · Portfolio theory · Optimization</p>
-      </article>
+          <p>
+            Asks 5 questions to profile your risk appetite, then builds an optimal Markowitz
+            portfolio of Indian equities and plots the full efficient frontier.
+          </p>
+          <p class="tags"><span>Python</span><span>Optimization</span></p>
+        </article>
+      </div>
     </section>
 
-    <section id="more">
-      <h2>More of my work</h2>
-      <ul class="links">
-        <li><a href="equity-research.html">Equity Research</a>: financial models and company analysis</li>
-        <li><a href="research.html">Research Papers</a>: academic and independent research</li>
-        <li><a href="writing.html">Writing</a>: movie reviews, SEO writing and my blog</li>
-      </ul>
+    <!-- 04 Research -->
+    <section class="wrap section" id="research">
+      <div class="section-head reveal">
+        <span class="num">04</span>
+        <h2>Research</h2>
+      </div>
+
+      <div class="list">
+        <a class="row reveal" href="https://iaraedu.com/pdf/ijair-volume-13-issue-3-july-september-2026-125-132.pdf">
+          <span class="row-tag">Published</span>
+          <span class="row-title">Comparative Analysis of Business Models for Forecasting and Valuation in the Indian Banking Industry</span>
+          <span class="row-date">Sep 2026</span>
+        </a>
+        <a class="row reveal" href="research.html">
+          <span class="row-tag">In progress</span>
+          <span class="row-title">Right Signal, Wrong Ticker: Referent-Binding Failure in Financial NLP and LLM Trading Agents</span>
+          <span class="row-date">2026</span>
+        </a>
+        <a class="row reveal" href="https://github.com/nachiketnaik-cmd/TVP-VAR-analysis-on-Indian-Sectoral-Indices">
+          <span class="row-tag">Project</span>
+          <span class="row-title">Volatility Spillover Modelling: TVP-VAR on Indian Sectoral Indices</span>
+          <span class="row-date">2025</span>
+        </a>
+        <a class="row reveal" href="equity-research.html">
+          <span class="row-tag">Equity research</span>
+          <span class="row-title">Risk-scoring framework for 20 Indian banks &amp; NBFCs, and a DCF study of brokerages</span>
+          <span class="row-date">2024–25</span>
+        </a>
+      </div>
+      <p class="more reveal"><a href="research.html">All research papers →</a> <a href="equity-research.html">Equity research →</a></p>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>The best way to reach me is by email.</p>
-      <ul class="links">
-        <li><a href="mailto:nachiketnaik2004@gmail.com">nachiketnaik2004@gmail.com</a></li>
-        <li><a href="https://www.linkedin.com/in/-nachiketnaik/">LinkedIn</a></li>
-        <li><a href="https://x.com/nachi_naik">X</a></li>
-        <li><a href="https://github.com/nachiketnaik-cmd">GitHub</a></li>
-        <li><a href="https://drive.google.com/file/d/1lpY8gLjxiE8MY2KQg7VX3oqKlX9Xgd91/view?usp=sharing">Resume</a></li>
-      </ul>
+    <!-- 05 Writing -->
+    <section class="wrap section" id="writing">
+      <div class="section-head reveal">
+        <span class="num">05</span>
+        <h2>Beyond the spreadsheet</h2>
+      </div>
+
+      <div class="cards cards-3">
+        <a class="card card-link tint-sky reveal" href="https://substack.com/@manwiththewords">
+          <p class="label">Substack</p>
+          <h3>Movie reviews</h3>
+          <p>Long-form reviews on my Substack.</p>
+        </a>
+        <a class="card card-link tint-cream reveal" href="https://drive.google.com/drive/folders/18H-LGqWN4wmkixLuVcTkFv6u15X6LTYh?usp=drive_link">
+          <p class="label">SEO</p>
+          <h3>My attempt at SEO writing</h3>
+          <p>A folder of articles written for search.</p>
+        </a>
+        <a class="card card-link tint-sage reveal" href="writing.html">
+          <p class="label">Blog</p>
+          <h3>My blog</h3>
+          <p>Notes on what I'm building and learning.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- 06 Contact -->
+    <section class="wrap section contact" id="contact">
+      <div class="section-head reveal">
+        <span class="num">06</span>
+        <h2>Get in touch</h2>
+      </div>
+      <p class="big reveal">The best way to reach me is by email.</p>
+      <div class="buttons reveal">
+        <a class="btn btn-dark" href="mailto:nachiketnaik2004@gmail.com">nachiketnaik2004@gmail.com</a>
+        <a class="btn" href="https://drive.google.com/file/d/1lpY8gLjxiE8MY2KQg7VX3oqKlX9Xgd91/view?usp=sharing">Resume</a>
+        <a class="btn" href="https://www.linkedin.com/in/-nachiketnaik/">LinkedIn</a>
+        <a class="btn" href="https://x.com/nachi_naik">X</a>
+        <a class="btn" href="https://github.com/nachiketnaik-cmd">GitHub</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Nachiket Naik</p>
+  <footer class="wrap footer">
+    <span class="wordmark">NACHIKET NAIK</span>
+    <span>&copy; 2026</span>
+    <a href="#top">Back to top ↑</a>
   </footer>
+
   <script src="script.js"></script>
   <script data-goatcounter="https://nachiketnaik.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

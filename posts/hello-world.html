@@ -5,29 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello, world | Nachiket Naik</title>
   <meta name="description" content="The first post on my blog.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap">
   <link rel="stylesheet" href="../style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <a class="logo" href="../index.html">Nachiket Naik</a>
-    <nav class="menu">
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu-links">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="../index.html">NACHIKET NAIK</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
-      <div class="menu-links" id="menu-links">
-        <a href="../index.html#experience">Experience</a>
-        <a href="../index.html#work">Work</a>
+      <nav class="nav" id="nav">
+        <a href="../index.html">Home</a>
         <a href="../equity-research.html">Equity Research</a>
         <a href="../research.html">Research Papers</a>
         <a href="../writing.html" class="active">Writing</a>
-        <a href="../index.html#contact">Contact</a>
-      </div>
-    </nav>
+        <a href="../index.html#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <article class="post">
-      <p class="date">27 Oct 2026</p>
+  <main id="main">
+    <article class="wrap post">
+      <p class="label">27 Oct 2026</p>
       <h1>Hello, world</h1>
 
       <p>
@@ -41,13 +46,16 @@
         &lt;p&gt; tag.
       </p>
 
-      <p><a href="../writing.html#blog">&larr; Back to all writing</a></p>
+      <p class="back"><a href="../writing.html#blog">&larr; Back to all writing</a></p>
     </article>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Nachiket Naik</p>
+  <footer class="wrap footer">
+    <span class="wordmark">NACHIKET NAIK</span>
+    <span>&copy; 2026</span>
+    <a href="#main">Back to top ↑</a>
   </footer>
+
   <script src="../script.js"></script>
   <script data-goatcounter="https://nachiketnaik.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
