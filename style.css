@@ -347,6 +347,51 @@ h1 {
 }
 .stat span { color: var(--muted); font-size: 0.92rem; line-height: 1.4; display: block; }
 
+/* Band */
+
+.band {
+  margin-top: 72px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 22px 0;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.band-track {
+  display: flex;
+  width: max-content;
+  animation: band-scroll 32s linear infinite;
+}
+.band:hover .band-track { animation-play-state: paused; }
+.band-list {
+  display: flex;
+  flex-shrink: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.band-list li {
+  display: flex;
+  align-items: center;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+.band-list li::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin: 0 40px;
+}
+@keyframes band-scroll {
+  to { transform: translateX(-50%); }
+}
+
 /* Sections */
 
 .section { padding-top: 96px; }
@@ -567,6 +612,11 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
+  .band { -webkit-mask-image: none; mask-image: none; }
+  .band-track { animation: none; width: auto; justify-content: center; }
+  .band-list { flex-wrap: wrap; flex-shrink: 1; justify-content: center; row-gap: 8px; padding: 0 16px; }
+  .band-list[aria-hidden="true"], .band-list li:nth-child(n+5) { display: none; }
+  .band-list li::after { display: none; }
 }
 
 /* Tablet */
@@ -609,6 +659,8 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
   .timeline li::before { left: 58px; top: 25px; }
   .t-year { font-size: 1.05rem; }
   .stats { padding-top: 48px; gap: 12px; }
+  .band { margin-top: 48px; padding: 16px 0; }
+  .band-list li::after { margin: 0 24px; }
   .stat { padding: 18px; }
   .section { padding-top: 72px; }
   .chapter { grid-template-columns: 1fr; gap: 8px; }
