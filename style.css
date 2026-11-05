@@ -492,6 +492,14 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
 .card:hover { transform: translateY(-4px); box-shadow: 0 24px 50px -32px rgba(0, 0, 0, 0.35); }
 .card p { margin: 0; }
 .card .tags { margin-top: 16px; }
+.tags .code-link {
+  margin-left: auto;
+  align-self: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+.tags .code-link:hover { color: var(--ink); text-decoration: underline; }
 .card img {
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.06);
