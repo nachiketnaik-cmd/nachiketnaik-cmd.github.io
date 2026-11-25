@@ -492,6 +492,12 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
 .card:hover { transform: translateY(-4px); box-shadow: 0 24px 50px -32px rgba(0, 0, 0, 0.35); }
 .card p { margin: 0; }
 .card .tags { margin-top: 16px; }
+.card .findings {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  font-size: 0.95rem;
+}
+.card .findings li { margin-bottom: 6px; }
 .tags .code-link {
   margin-left: auto;
   align-self: center;
