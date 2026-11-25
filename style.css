@@ -612,6 +612,15 @@ h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); t
 .post h2 { font-size: 1.7rem; margin: 40px 0 12px; }
 .post p { font-size: 1.08rem; }
 .post .back { margin-top: 48px; }
+.post .post-sub { color: var(--muted); font-size: 1.2rem; margin: -16px 0 36px; }
+.post ul { padding-left: 20px; }
+.post li { margin-bottom: 10px; font-size: 1.05rem; }
+.post .note { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
+.post .note a, .post p a { text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.table-wrap { overflow-x: auto; margin: 20px 0; }
+.post table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.post th, .post td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.post th { font-weight: 600; background: #fff; }
 .post .back a { text-decoration-color: var(--accent); text-underline-offset: 4px; }
 
 /* Motion */
